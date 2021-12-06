@@ -1,0 +1,14 @@
+sudo apt install mysql- server
+Nu kan je installeren klik op Y
+Om het secure te maken van je sql server
+sudo mysql_secure_installation
+Klik op Y om een password te maken
+klik op 1 voor een medium password
+Voor anonymous users klik op y
+Klik op yes om de login root rometely te disablen voor hackers
+Daarna vraagt hij voor de privilege tables dus de permissies, je klikt dan weer op Y
+Om je mysql aan te zetten doe je : sudo systemctl enable --now mysql.service
+systemctl status mysql.service om de status van je server te checken
+sudo ufw status om je firewall te checken
+sudo ufw allow mysql om mysql te enablen omdat het poort 3306 gebruikt
+Daarna klikken op sudo ufw status
