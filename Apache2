@@ -1,0 +1,28 @@
+Sudo apt-get update
+•	Sudo apt-get update wordt gebruikt om pakketinformatie van alle geconfigureerde bronnen te downloaden 
+Sudo apt-get install apache2
+•	Installatie van apache, als er gevraagd of je dit wilt doen klik je op ja
+Nu ga je checken of apache2 werkt
+Je typt in eerst clear
+ Als je via je browser inttypt : localhost en het laat zien *It works* dan werkt het
+Of je kan 127.0.0.1 proberen
+Netstat -a | more
+Nu zie alle poorten , alle poorten waar de computer meeluistert
+Als je de webserver wilt stoppen doe je :
+Sudo /etc/init.d/apache2 stop
+Als je netstat command weer invoert zal je de poort van de webserver niet zien
+Netstat -a | more
+Om een webpage op te zetten op je webbrowser doe je :
+Cd /var /www
+/var/ww$  ls command
+Nu zie je index.html en dit is de file die je kan editen om je homepage te maken
+/var /ww$ sudo nano index.html
+ 
+
+
+
+
+Nu zou je dit moeten zien
+ 
+
+Nu kan je een head tag ,title tag en /title tag typen en tussen in de naam van de homepage.
